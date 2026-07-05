@@ -1,0 +1,48 @@
+{
+  "name": "warranty-claim-processor-skill",
+  "version": "1.0.0",
+  "description": "Process and validate customer warranty claims by checking eligibility, detecting fraud signals, and generating claim decisions with resolution options.",
+  "author": "alphaparkinc",
+  "category": "operations",
+  "tags": [
+    "warranty",
+    "claims",
+    "fraud-detection",
+    "customer-service",
+    "e-commerce"
+  ],
+  "inputs": {
+    "claim": {
+      "type": "object",
+      "description": "Claim details: product_id, purchase_date, claim_date, issue_description, proof_provided."
+    },
+    "product": {
+      "type": "object",
+      "description": "Product info: name, warranty_months, category, price."
+    },
+    "customer": {
+      "type": "object",
+      "description": "Customer history: past_claims, account_age_months, total_orders."
+    }
+  },
+  "outputs": {
+    "decision": {
+      "type": "string",
+      "description": "approved / denied / review_required."
+    },
+    "eligibility": {
+      "type": "object",
+      "description": "Warranty eligibility check results."
+    },
+    "fraud_risk": {
+      "type": "object",
+      "description": "Fraud risk score and signals."
+    },
+    "resolution_options": {
+      "type": "array",
+      "description": "Available resolution options for approved claims."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
