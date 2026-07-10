@@ -1,4 +1,4 @@
-# warranty-claim-processor-skill
+# genpark-warranty-claim-processor-skill
 
 > **GenPark AI Agent Skill** -- Process and validate warranty claims with eligibility checks, fraud detection, and resolution options.
 
