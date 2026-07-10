@@ -1,8 +1,8 @@
 {
   "name": "warranty-claim-processor-skill",
   "version": "1.0.0",
-  "description": "Process and validate customer warranty claims by checking eligibility, detecting fraud signals, and generating claim decisions with resolution options.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Process and validate customer warranty claims by checking eligibility, detecting fraud signals, and generating claim decisions with resolution options.",
+  "author": "genpark",
   "category": "operations",
   "tags": [
     "warranty",
